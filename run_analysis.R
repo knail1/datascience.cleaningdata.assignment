@@ -20,7 +20,7 @@ run_analysis <- function() {
   createCSV <- function(dataFrame) {
     if (!file.exists("course3_finalAssignment_tidyData.csv")) {
       print("creating the csv name: course3_finalAssignment_tidyData.csv")
-      write.csv(dataFrame, file="course3_finalAssignment_tidyData.csv", row.names=FALSE)
+      write.table(dataFrame, file="course3_finalAssignment_tidyData.csv", row.names=FALSE)
     } else {
       print("course3_finalAssignment_tidyData.csv already exists, skipping write")
     }
