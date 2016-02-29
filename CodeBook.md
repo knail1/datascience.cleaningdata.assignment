@@ -28,18 +28,19 @@
 ### 2. what the corresponding data and variables are
 #### The Data:
 * The *data* is basically a massaged output of the signals captured from the device at a rate of 50Hz (or 0.02 seconds). 
+* The specifics of the "massage" are documented in the "UCS HAR Dataset/features_info.txt".
 * There were 30 unique volunteer subjects used to collect the data
 * Each subject was asked to do 6 things , while the device on them was collecting the data. These things were: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 #### The Variables:
-The specifics of the "massage" are documented in the "UCS HAR Dataset/features_info.txt".
+Essentially, the tidy data has each column as an independent data variable, and each row item represents the value of the sample for that variable.
 
-* "1" "volunteerID" : the ID of the volunteer subject
-* "2" "activityType": the type of activity he/she was doing
+* volunteerID : the ID of the volunteer subject
+* activityType: the type of activity he/she was doing
 
-The following columns were computed for each activity for that subject:
-* volunteerID
-* activityType
+The remaining following columns were computed for each activity for that subject"
+
+
 * averageOf_tBodyAccmeanX
 * averageOf_tBodyAccmeanY
 * averageOf_tBodyAccmeanZ
