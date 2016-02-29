@@ -26,3 +26,10 @@
 13.  finally, I create the csv file.
 
 ### 2. what the corresponding data and variables are
+#### The Data:
+* The *data* is basically a massaged output of the signals captured from the device at a rate of 50Hz (or 0.02 seconds). 
+* There were 30 unique volunteer subjects used to collect the data
+* Each subject was asked to do 6 things , while the device on them was collecting the data. These things were: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+
+#### The Variables:
+The specifics of the "massage" are documented in the "UCS HAR Dataset/features_info.txt".
