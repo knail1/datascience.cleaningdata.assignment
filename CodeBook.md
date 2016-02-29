@@ -38,8 +38,18 @@ Essentially, the tidy data has each column as an independent data variable, and 
 * volunteerID : the ID of the volunteer subject
 * activityType: the type of activity he/she was doing
 
-The remaining following columns were computed for each activity for that subject"
+The remaining following columns were computed for each activity for that subject". These are literally only the mean and standard deviation functions (81) out of the total functions (561) listed in the dataset's features.txt file. 
+Of importance is the fact that each of these values are the mean (or average of the complete data sampled for that specific variable). This mean is computed in terms of the volunteer and the activity type. example...
 
+| volunteerID   | activityType | averageOf_tBodyAccmeanX | ..etc... |
+| ------------- | ------------- | ------------- |  -------------
+| 1  | "LAYING"   | 0.22159824394  | ..etc... |
+| 1  | "SITTING"  | 0.261237565425532  | ..etc... |
+| .. | .... | ..... | ...|
+... and so on..
+e.g. Look at the bold item: There were literally a ton of data points for even the laying activity (polled 0.02s for the duration  volunteer #1 lay down). however the tidy data only presents the mean of this activity for volunteer #1 above (whic is 0.221598...)
+
+I will not explain the specifics of each variable below, as you can glean that from the features_info.txt file.
 
 * averageOf_tBodyAccmeanX
 * averageOf_tBodyAccmeanY
