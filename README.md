@@ -1,6 +1,11 @@
 # datascience.cleaningdata.assignment
 ## Name: Omer Ansari, 2.28.16
 
+This repo contains:
+* this README.md file
+* Codebook.md , which goes through the transformations and variables in detail
+* run_analysis.R : the actual script which tidied the data 
+* course3_finalAssignment_tidyData.csv : the tidy data produced by the script.
 
 The  README.md file is required to explain how all scripts work. What follows are the details
 * It is really simple, since everything is in  the same script run_analysis.R.
