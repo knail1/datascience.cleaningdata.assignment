@@ -1,5 +1,20 @@
 # datascience.cleaningdata.assignment
-Name: Omer Ansari
+## Name: Omer Ansari, 2.28.16
+
+
+The  README.md file is required to explain how all scripts work. What follows are the details
+* It is really simple, since everything is in  the same script run_analysis.R.
+* I created separate functions, 
+	* one for downloading, and unzipping the raw (untidy) data set
+	* one for creating the csv
+* The script just simply, 
+	* reads in as tables, the activity, features, test and train data, and then 
+	* reduces the data columns to just mean and std values, and appends the activity and features columns to this data. Then finally,
+	* uses the dplyr function to group_by the volunteer and activity data, and the summarize_each function to apply the mean() function each of the data points resulting from the group_by function. It also
+	* ensures the title of the variable stated "averageOf_" since each value now is the average of the whole column.
+
+
+-------
 
 Deliverables:
 
